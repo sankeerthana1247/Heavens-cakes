@@ -1,0 +1,264 @@
+body {
+    background-color: rgb(254, 249, 249);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 100px; 
+}
+
+.header-link.delivery-link {
+    font-size: 18px; 
+    color: rgb(236, 31, 134);
+    padding-left: 5px; 
+}
+
+.logout-button {
+    display: none;
+    position: absolute;
+    right: 150px;
+    top: 100px;
+    background-color: #efa7dd;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+.navbar {
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); 
+    height:auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header-left a,
+.header-left span {
+    color: #333;
+    text-decoration: none;
+    margin-right: 5px;
+    border-right: 2px solid #ccc;
+    padding-right: 10px;
+}
+
+.logo {
+    width: 75%;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    background-color: #f3f1f1;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 35px;
+}
+
+.search-bar {
+    padding: 9px;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    width: 400px;
+}
+
+.search-button {
+    background-color: #f0ecec;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.location-container {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(45deg, #eecfe5, #d7d8f7, #b2cbdf, #b5d3de);
+    padding: 5px;
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.location-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.loc-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.loc-text {
+    font-size: 14px;
+    color: #333333;
+}
+
+.additional-images {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.additional-img {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 5px;
+}
+
+.header-link {
+    position: relative;
+    display: inline-block;
+}
+
+.header-link a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom-color 0.3s ease;
+}
+
+.header-link a::before,
+.header-link a::after {
+    content: "";
+    position: absolute;
+    width: 0; 
+    height: 2px; 
+    background-color: transparent; 
+    transition: width 0.3s ease; 
+    z-index: 1;
+}
+
+.header-link a::before {
+    left: 0; 
+    top: 0; 
+}
+
+.header-link a::after {
+    right: 0; 
+    bottom: 0; 
+}
+
+.header-link a:hover {
+    color: #ec1f86;
+    border-bottom-color: transparent; 
+}
+
+.header-link a:hover::before,
+.header-link a:hover::after {
+    width: 100%; 
+    background-color: #ec1f86;
+}
+
+.header-link.express-link a:hover::before,
+.header-link.express-link a:hover::after,
+.header-link.delivery-link a:hover::before,
+.header-link.delivery-link a:hover::after {
+    width: 0; 
+    background-color: transparent; 
+}
+
+.cakes-dropdown {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: auto;
+    border-radius: 5px;
+    column-count: 4;
+    column-gap: 20px;
+    list-style: none;
+    z-index: 100;
+}
+
+.header-link.cakes-link:hover .cakes-dropdown {
+    display: flex;
+}
+
+.cakes-dropdown .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cakes-dropdown h3 {
+    font-size: 15px;
+    margin-bottom: 14px;
+    color: #333;
+}
+
+.cakes-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cakes-dropdown ul li {
+    padding: 10px;
+    margin-bottom: 2px;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .cakes-dropdown {
+        width: 500px;
+        column-count: 2;
+        column-gap: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .cakes-dropdown {
+        width: 700px;
+        column-count: 3;
+        column-gap: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cakes-dropdown {
+        width: 1000px;
+        column-count: 4;
+        column-gap: 20px;
+    }
+}

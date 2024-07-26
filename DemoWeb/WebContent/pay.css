@@ -1,0 +1,152 @@
+@charset "ISO-8859-1";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: flex;
+    vertical-align: middle;
+}
+
+button[type="submit"] {
+    background-color: #e48f73;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #28a745;
+}
+
+.popup {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.popup img {
+    max-width: 100px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    display: flex;
+}
+
+.popup h2 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.popup p {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 16px;
+}
+
+.popup button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6347;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup button:hover {
+    background-color: #e5533d;
+}
+
+.open-popup {
+    display: flex;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.payment-methods label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.payment-methods label img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.payment-methods label p {
+    margin: 0;
+}
+
+.payment-methods input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: flex;
+    vertical-align: middle;
+    display: flex;
+}
+
+.payment-methods button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.payment-methods button[type="submit"]:hover {
+    background-color: #0056b3;
+}

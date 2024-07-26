@@ -1,0 +1,158 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 800px;
+    height: auto;
+}
+
+.left-section {
+    flex: 1;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.left-section img {
+    width: 320px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup-form {
+    margin-top: 20px;
+}
+
+.signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-input {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+.form-button {
+    background-color: #ff5777;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.terms {
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.terms a {
+    color: #888;
+    text-decoration: underline;
+}
+
+.or-line {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.or-line::before,
+.or-line::after {
+    content: "";
+    flex: 1;
+    border-top: 1px solid #888;
+}
+
+.or-line span {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.google {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    padding-bottom: 10px;
+}
+
+.loggoogle {
+    background-color: #ffff;
+    color: rgb(9, 9, 9);
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.loggoogle:hover {
+    background-color: #ff5777;
+    color: #fff;
+}
+
+.loggoogle p {
+    margin: 0;
+}
+
+.loggoogle a:hover {
+    margin: 0;
+    color: #ff5777;
+}
+s

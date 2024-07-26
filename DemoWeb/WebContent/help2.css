@@ -1,0 +1,364 @@
+@charset "ISO-8859-1";
+body {
+  font-family: Arial, sans-serif;
+}
+
+.help {
+  text-align: center;
+  margin: 20px;
+}
+
+.center-header {
+  text-align: center;
+}
+
+.help-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.faq-item {
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.faq-item:hover {
+  transform: scale(1.05);
+}
+
+.faq-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.faq-content img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.left-section,
+.right-section {
+  padding: 10px;
+}
+
+.left-section img {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.google {
+  margin-top: 10px;
+}
+
+.google a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.google a:hover {
+  text-decoration: underline;
+}
+
+/* The Modal (background) */
+.modal {
+  display: block; /* Show the modal */
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.help {
+  text-align: center;
+  margin: 20px;
+}
+
+.center-header {
+  text-align: center;
+}
+
+.help-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  width: 250px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.faq-item:hover {
+  transform: scale(1.05);
+}
+
+.faq-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.faq-content img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.left-section,
+.right-section {
+  padding: 10px;
+}
+
+.left-section img {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.google {
+  margin-top: 10px;
+}
+
+.google a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.google a:hover {
+  text-decoration: underline;
+}
+
+.help
+{
+  background-color:white;
+  padding: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right:20px;
+}
+
+.center-header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.help-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:30px;
+  padding-bottom: 20px;
+  width:1300px;
+  height:300px;
+  margin-left:30pX;
+}
+
+.faq-item {
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  box-shadow: 1px 1px 5px rgb(138, 134, 134,0.5) ;
+  padding: 15px;
+  text-align: center;
+}
+
+.faq-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top:50px
+}
+
+.faq-item p {
+  margin-top: 30px;
+  font-size: large
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-evenly;
+    gap:20px;
+    border:black;
+    border-left-color: #ff5777;
+    
+  }
+
+  .card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 300px;
+    height:150px;
+  }
+
+  .left-section {
+    flex: 1;
+    text-align: center;
+    padding-right: 20px;
+  }
+
+  .left-section img {
+    width:100px;
+    height: 100x;
+    object-fit: cover;
+
+  }
+
+  .right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    /* width:100px; */
+  }
+
+  .loggoogle {
+    background-color: #ffff;
+    color: rgb(9, 9, 9);
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    
+    transition: background-color 0.3s ease;
+  }
+
+  .loggoogle:hover {
+    background-color: #ff5777;
+    color:#fff
+  }
+
+  .loggoogle p {
+    margin: 0; /* Remove default margin for <p> */
+  }
+  
+  .loggoogle a:hover {
+    margin: 0;
+    color:#ff5777 ; /* Remove default margin for <p> */
+  }
